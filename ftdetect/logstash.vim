@@ -1,5 +1,5 @@
 fun! s:DetectLogstash()
-    if getline(1) =~ '^[ \t]*(input|filter|output) {'
+    if getline(1) =~ '^\s*(input|filter|output) {'
         set ft=logstash
     endif
 endfun
